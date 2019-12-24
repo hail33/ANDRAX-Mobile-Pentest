@@ -1,0 +1,6 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <root-path path="/" name="extSdCard" />
+    <external-path name="sdcard" path="." />
+
+</paths>

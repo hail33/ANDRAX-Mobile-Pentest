@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thecrackertechnology.busybox" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+    <application>
+        <activity
+            android:name="com.thecrackertechnology.busybox.MainActivity"
+            android:label="ANDRAX BusyBOX Installer" >
+        </activity>
+        <activity
+            android:name="com.thecrackertechnology.busybox.SettingsActivity"
+            android:label="BusyBOX Settings"
+            android:parentActivityName="com.thecrackertechnology.busybox.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thecrackertechnology.busybox.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.thecrackertechnology.busybox.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.thecrackertechnology.busybox.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thecrackertechnology.busybox.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
